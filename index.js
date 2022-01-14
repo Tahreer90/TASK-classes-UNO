@@ -40,21 +40,21 @@ class Card {
     return `./images/${this.color}_${this.number}.png`;
   }
 }
-//const greenCard = new Card("Green", 0);
-//const blueCard = new Card("Blue", 1);
-//const redCard = new Card("Red", 2);
-//const yellowCard = new Card("Yellow", 3);
+const greenCard = new Card("Green", 0);
+const blueCard = new Card("Blue", 1);
+const redCard = new Card("Red", 2);
+const yellowCard = new Card("Yellow", 3);
 
 console.log(greenCard, blueCard, redCard, yellowCard);
 
 cards.push(greenCard, blueCard, redCard, yellowCard);
 
-//cards = [];
+cards = [];
 
 const colors = ["Green", "Blue", "Red", "Yellow"];
 
 colors.forEach((color) => {
-  for (let i = 0; i < 10, i++; ) {
+  for (let i = 0; i < 10; i++) {
     const card = new Card(color, i);
     cards.push(card, card);
   }
